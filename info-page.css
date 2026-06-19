@@ -1,0 +1,292 @@
+.info-page {
+  padding-bottom: 12px;
+}
+
+.page-hero-section {
+  padding-top: 14px;
+  background:
+    radial-gradient(circle at top right, rgba(240, 207, 122, .18), transparent 34%),
+    linear-gradient(180deg, rgba(18, 17, 15, .96), rgba(9, 9, 8, .98));
+  overflow: hidden;
+}
+
+.page-hero-shell,
+.page-main-grid,
+.page-split-grid {
+  display: grid;
+  gap: 18px;
+  align-items: start;
+}
+
+.page-hero-shell,
+.page-main-grid {
+  grid-template-columns: minmax(0, 1.04fr) minmax(340px, .96fr);
+}
+
+.page-split-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-hero-copy,
+.page-side-card,
+.content-card,
+.faq-card,
+.placeholder-card,
+.blog-card,
+.policy-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(33, 31, 27, .98), rgba(18, 17, 15, .98));
+  box-shadow: var(--shadow);
+}
+
+.page-hero-copy {
+  display: grid;
+  gap: 14px;
+  padding: 30px;
+  background:
+    radial-gradient(circle at top left, rgba(130, 183, 170, .12), transparent 34%),
+    linear-gradient(180deg, rgba(33, 31, 27, .98), rgba(18, 17, 15, .98));
+}
+
+.page-hero-copy p:last-of-type,
+.page-side-card p,
+.content-card p,
+.faq-card p,
+.placeholder-card p,
+.blog-card p,
+.policy-card p,
+.policy-card li {
+  color: var(--muted);
+}
+
+.page-lead {
+  max-width: 760px;
+  color: rgba(246, 241, 232, .82);
+  font-size: 18px;
+}
+
+.page-tags,
+.stat-list,
+.note-list,
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.page-tags span,
+.stat-list span,
+.note-list span,
+.blog-tags span {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 11px;
+  border: 1px solid rgba(240, 207, 122, .22);
+  border-radius: var(--radius);
+  color: var(--gold-2);
+  background: rgba(255, 255, 255, .04);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.page-actions,
+.page-side-actions,
+.blog-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-side-card,
+.content-card,
+.faq-card,
+.policy-card {
+  padding: 24px;
+}
+
+.page-side-card {
+  display: grid;
+  gap: 14px;
+}
+
+.stat-stack,
+.content-stack,
+.faq-stack,
+.placeholder-grid,
+.blog-grid,
+.policy-sections {
+  display: grid;
+  gap: 12px;
+}
+
+.stat-stack article,
+.content-stack article {
+  padding: 16px;
+  border: 1px solid rgba(240, 207, 122, .16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, .035);
+}
+
+.stat-stack span,
+.placeholder-card span,
+.blog-source,
+.policy-card h2 {
+  color: var(--gold-2);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.stat-stack strong,
+.content-card h2,
+.faq-card h3,
+.placeholder-card h3,
+.blog-card h2 {
+  color: var(--ink);
+}
+
+.stat-stack strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.content-card h2,
+.policy-card h2 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.content-card h3,
+.faq-card h3,
+.placeholder-card h3,
+.blog-card h2 {
+  font-size: 22px;
+}
+
+.content-card ul,
+.faq-card ul,
+.policy-card ul,
+.policy-card ol {
+  margin: 14px 0 0;
+  padding-left: 18px;
+}
+
+.content-card li + li,
+.faq-card li + li,
+.policy-card li + li,
+.policy-card p + p,
+.policy-card p + ul,
+.policy-card p + ol {
+  margin-top: 8px;
+}
+
+.faq-stack {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.faq-card h3 {
+  margin-bottom: 10px;
+}
+
+.placeholder-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.placeholder-card {
+  min-height: 220px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 22px;
+  box-shadow: none;
+  background:
+    linear-gradient(135deg, rgba(240, 207, 122, .12), transparent 38%),
+    linear-gradient(180deg, rgba(34, 31, 26, .98), rgba(16, 15, 12, .98));
+}
+
+.placeholder-card p {
+  margin-top: 4px;
+}
+
+.empty-note {
+  padding: 18px;
+  border: 1px dashed rgba(240, 207, 122, .28);
+  border-radius: var(--radius);
+  color: rgba(246, 241, 232, .8);
+  background: rgba(255, 255, 255, .03);
+}
+
+.blog-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.blog-card {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+}
+
+.blog-card p {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.blog-card-actions .btn {
+  flex: 1 1 220px;
+}
+
+.policy-card {
+  box-shadow: none;
+}
+
+.policy-card h3 {
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-size: 22px;
+}
+
+.policy-card ol {
+  padding-left: 22px;
+}
+
+@media (max-width: 1120px) {
+  .page-hero-shell,
+  .page-main-grid,
+  .page-split-grid,
+  .faq-stack,
+  .placeholder-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-hero-section {
+    padding-top: 10px;
+  }
+
+  .page-hero-copy,
+  .page-side-card,
+  .content-card,
+  .faq-card,
+  .placeholder-card,
+  .blog-card,
+  .policy-card {
+    padding: 22px;
+  }
+
+  .page-lead {
+    font-size: 16px;
+  }
+
+  .page-actions .btn,
+  .page-side-actions .btn,
+  .blog-card-actions .btn {
+    width: 100%;
+  }
+}

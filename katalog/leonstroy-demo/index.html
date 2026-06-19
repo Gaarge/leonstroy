@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonstroy — каталог ДПК</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="catalog-section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Каталог материалов</span>
+          <h1>Террасные системы и ДПК-комплектующие</h1>
+          <p>
+            Подберите продукцию по категории и производителю. Для каждого материала можно запросить наличие,
+            подобрать комплектующие и получить предварительный расчёт под объект.
+          </p>
+        </div>
+        <a class="head-link" href="#request">Получить консультацию</a>
+      </div>
+
+      <div class="catalog-shell">
+        <aside class="category-panel" aria-label="Категории товаров">
+          <div class="panel-title">Разделы каталога</div>
+          <button class="category-btn is-active" data-category="decking">
+            <span>Террасная доска</span>
+            <small>24 позиции</small>
+          </button>
+          <button class="category-btn" data-category="fences">
+            <span>Ограждения</span>
+            <small>12 позиций</small>
+          </button>
+          <button class="category-btn" data-category="steps">
+            <span>Ступени</span>
+            <small>9 позиций</small>
+          </button>
+          <button class="category-btn" data-category="boards">
+            <span>Заборная доска</span>
+            <small>16 позиций</small>
+          </button>
+          <button class="category-btn" data-category="facade">
+            <span>Фасадные системы</span>
+            <small>8 позиций</small>
+          </button>
+          <button class="category-btn" data-category="accessories">
+            <span>Комплектующие</span>
+            <small>31 позиция</small>
+          </button>
+        </aside>
+
+        <div class="catalog-main">
+          <div class="catalog-toolbar">
+            <div>
+              <h2 id="categoryTitle">Террасная доска</h2>
+              <p id="categoryText">Пустотелая и полнотелая доска для террас, крылец, зон бассейна и коммерческих объектов.</p>
+            </div>
+            <div class="toolbar-note">Цена уточняется после расчёта объёма и доставки</div>
+          </div>
+
+          <div class="brand-strip" id="brandStrip" aria-label="Производители"></div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </div>
+
+      <div class="request-card" id="request">
+        <div>
+          <span class="eyebrow">Не знаете, что выбрать?</span>
+          <h3>Подберём материал под ваш объект</h3>
+          <p>Клиент присылает размеры, фото площадки или проект — менеджер считает доску, лаги, крепёж, доставку и монтаж.</p>
+        </div>
+        <div class="request-actions">
+          <a href="#" class="btn btn-primary">Запросить расчёт</a>
+          <a href="#" class="btn btn-secondary">Написать в WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
